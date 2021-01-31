@@ -12,7 +12,7 @@ import pickle
 import sklearn
 import numpy as np
 
-app=Flask(__name__)
+app=Flask(__name__,template_folder='Templates')
 
 model = pickle.load(open('car_price.pkl', 'rb'))
 
